@@ -15,8 +15,9 @@ const Navbar = () => {
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/products">Products</Link>
-         <Link to="/fetch">Fetch</Link>
-          <Link to="/fetchbyaxios">Fetchbyaxios</Link>
+          <Link to="/login">Login</Link>
+         {/* <Link to="/fetch">Fetch</Link> */}
+          {/* <Link to="/fetchbyaxios">Fetchbyaxios</Link> */}
         </nav>
       </header>
        </>
