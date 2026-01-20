@@ -24,7 +24,7 @@ const BakeryLanding = () => {
 
       {/* Products Section */}
       <section className="products" id="products">
-        <h2>Our Specialties</h2>
+        <h2>Our Specialties </h2>
         <div className="product-grid">
           <div className="product-card">
             <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec" alt="Bread" />
