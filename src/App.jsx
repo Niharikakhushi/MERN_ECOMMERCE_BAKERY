@@ -12,6 +12,7 @@ import Props from "./Props/Props.jsx";
 import "./App.css";
 import UsestateComponent from "./Usestate/Usestate.jsx";
  import usercontext from "./Contact/contex/contex.jsx";
+import LoginPage from "./Login/login.jsx";
 function App() {
 
 const name="khushi";
@@ -40,7 +41,8 @@ const studentobject={
         <Route path="/home" element={<BakeryLanding />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage name={name}/>} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/fetch" element={<Fetchcomponent name={name}/>}/> 
         <Route path="/fetchbyaxios" element={<Fectbyaxious/>}/>
          <Route path="/" element={<Props name={name}  secondprops={studentobject}/>} />

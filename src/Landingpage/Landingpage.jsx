@@ -13,7 +13,7 @@ const BakeryLanding = () => {
       {/* Hero Section */}
       <section className="hero" id="home">
         <div className="hero-content">
-          <h1>Freshly Baked, Every Day {user}</h1>
+          <h1>Freshly Baked, Every Day sweetcrust</h1>
           <p>
             Handcrafted breads, cakes, and pastries made with love and the
             finest ingredients.
