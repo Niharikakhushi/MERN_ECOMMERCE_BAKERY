@@ -13,6 +13,7 @@ import "./App.css";
 import UsestateComponent from "./Usestate/Usestate.jsx";
  import usercontext from "./Contact/contex/contex.jsx";
 import LoginPage from "./Login/login.jsx";
+import SignupPage from "./Signup/signup.jsx";
 function App() {
 
 const name="khushi";
@@ -43,6 +44,7 @@ const studentobject={
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage/>} />
         <Route path="/fetch" element={<Fetchcomponent name={name}/>}/> 
         <Route path="/fetchbyaxios" element={<Fectbyaxious/>}/>
          <Route path="/" element={<Props name={name}  secondprops={studentobject}/>} />
