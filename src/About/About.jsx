@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 const AboutPage = () => {
   return (
     <div className="about-page">
-      {/* Header */}
-      
 
       {/* Hero */}
       <section className="about-hero">
@@ -17,18 +15,22 @@ const AboutPage = () => {
       {/* About Content */}
       <section className="about-section">
         <div className="about-text">
-          <h2>Who We Are</h2>
+          <span className="tagline">Who We Are</span>
+          <h2>Crafting Memories Through Baking</h2>
           <p>
             Founded in 2015, SweetCrust Bakery began with a simple idea — create
-            baked goods that feel homemade yet taste extraordinary. Every item
-            we bake is crafted using premium ingredients, traditional methods,
-            and a whole lot of love.
+            baked goods that feel homemade yet taste extraordinary.
           </p>
 
           <p>
-            From artisan breads to indulgent cakes, our mission is to bring
-            warmth, comfort, and joy to every table we serve.
+            Every item we bake is crafted using premium ingredients, traditional
+            methods, and a whole lot of love. Our goal is to make every bite feel
+            special.
           </p>
+
+          <Link to="/products">
+            <button className="about-btn">Explore Our Products</button>
+          </Link>
         </div>
 
         <div className="about-image">
@@ -41,7 +43,7 @@ const AboutPage = () => {
 
       {/* Values */}
       <section className="values-section">
-        <h2>Our Values</h2>
+        <h2>Our Core Values</h2>
 
         <div className="values-grid">
           <div className="value-card">
@@ -61,7 +63,15 @@ const AboutPage = () => {
         </div>
       </section>
 
-    
+      {/* CTA */}
+      <section className="about-cta">
+        <h2>Experience the SweetCrust Difference</h2>
+        <p>Freshly baked happiness delivered to your doorstep</p>
+        <Link to="/contact">
+          <button className="about-btn">Contact Us</button>
+        </Link>
+      </section>
+
     </div>
   );
 };

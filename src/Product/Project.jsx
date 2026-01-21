@@ -49,28 +49,37 @@ const products = [
 const ProductsPage = () => {
   return (
     <div className="products-page">
+
       {/* Header */}
       <header className="products-header">
         <h1>Our Products</h1>
         <p>Freshly baked delights made with premium ingredients</p>
       </header>
 
-      {/* Products Grid */}
+      {/* Grid */}
       <section className="products-wrapper">
         {products.map((item) => (
           <div className="product-item" key={item.id}>
-            <img src={item.img} alt={item.name} />
+
+            <div className="product-image">
+              <img src={item.img} alt={item.name} />
+              <span className="badge">Fresh</span>
+            </div>
+
             <div className="product-info">
               <h3>{item.name}</h3>
               <p className="desc">{item.desc}</p>
+
               <div className="product-footer">
                 <span className="price">{item.price}</span>
                 <button className="add-btn">Add to Cart</button>
               </div>
             </div>
+
           </div>
         ))}
       </section>
+
     </div>
   );
 };
