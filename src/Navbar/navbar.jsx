@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";  
+import { useSelector, useDispatch } from "react-redux";
 
 const Navbar = () => {
+    const count = useSelector((state) => state.counter.value);
+  
   return (
  <>
  
@@ -9,7 +12,7 @@ const Navbar = () => {
  <header className="bakery-header">
         <div className="logo">SweetCrust</div>
         <nav className="nav">
-
+{count}
 
           <Link to="/home">Home</Link>
           <Link to="/about">About</Link>
